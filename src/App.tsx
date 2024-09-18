@@ -5,9 +5,6 @@ function App() {
   return (
     <>
       <Home/>
-      <div className="conatiner bg-black">
-        
-      </div>
     </>
   )
 }
