@@ -10,11 +10,11 @@ export default function Background() {
             <p className="text-[93px] font-bold text-white">Download The App </p>
             <p className="text-[60px] font-bold text-[greenYellow]">And Make Your Order Now</p>
             <div className='flex space-x-4  translate-y-14'>
-              <button className='flex  bg-white  rounded-full p-4 text-lg justify-between items-center  hover:bg-green-500 text-white' type="button">
+              <button className='flex  bg-white  rounded-full p-4 text-lg justify-between items-center  hover:bg-green-500' type="button">
                 <img className='w-6 mr-2 text-lg' src={Playstore} alt=""/>
                 Google Play
               </button>
-              <button type="button" className='font-bold text-black bg-white rounded-full p-4 text-lg hover:bg-green-500 text-white transition duration-100 ease-in'>
+              <button type="button" className='font-bold  bg-white rounded-full p-4 text-lg hover:bg-green-500  transition duration-100 ease-in'>
                 <AppleIcon className='mr-1 text-lg'/>
                 App Store
               </button>

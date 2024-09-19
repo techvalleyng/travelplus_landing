@@ -19,7 +19,7 @@ export default function Services() {
                     <p className="leading-7"> We pick and <br /> deliver packages<br /> to your door steps</p>
                 </div>
             </div>
-            <span className="h-[40vh] border-r-2"></span>
+            {/* <span className="h-[40vh] border-r-2"></span> */}
             <div className="">
                 <div className="bg-green-500 h-4 w-20 p-10 rounded-full">
                 </div>
@@ -28,7 +28,7 @@ export default function Services() {
                     <p className="leading-7"> We pick and <br />deliver packages<br /> to your door steps</p>
                 </div>
             </div>
-            <span className="h-[40vh] border-r-2"></span>
+            {/* <span className="h-[40vh] border-r-2"></span> */}
             <div className="">
                 <div className="bg-green-500 h-4 w-20 p-10 rounded-full">
                 </div>
