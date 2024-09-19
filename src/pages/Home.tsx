@@ -1,5 +1,6 @@
 import Background from "../components/Background";
 import Header from "../components/Header";
+import Services from "../components/Services";
 
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <div>
       <Header/>
       <Background/>
+      <Services/>
     </div>
   )
 }
