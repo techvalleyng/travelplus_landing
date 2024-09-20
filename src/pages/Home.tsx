@@ -1,5 +1,6 @@
 import Background from "../components/Background";
 import Book from "../components/Book";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Helps from "../components/Helps";
 import Services from "../components/Services";
@@ -12,6 +13,7 @@ export default function Home() {
       <Services/>
       <Book/>
       <Helps/>
+      <Footer/>
     </div>
   )
 }
