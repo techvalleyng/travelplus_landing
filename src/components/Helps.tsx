@@ -12,7 +12,7 @@ export default function Helps() {
             <div className="flex mt-10 capitalize gap-20 items-center justify-center">
                 <div className="flex  flex-col  items-center border w-[200px] h-[200px] border-gray-100 shadow">
                     <img className='w-14' src={maps} alt="" />
-                    <p className="text-lg ml-6 mt-4 font-extrabold">No28, aliku road, opp kaduna investment house</p>
+                    <p className="text-lg ml-6 mt-4 font-extrabold">No28, ali akilu road, opp <br />kaduna <br /> investment <br /> house</p>
                 </div>
                 <div className="flex flex-col  items-center border w-[200px] h-[200px] border-gray-100 shadow-lg shadow-slate-50">
                     <img className='w-14' src={call} alt="" />
@@ -20,7 +20,7 @@ export default function Helps() {
                 </div>
                 <div className="flex flex-col  items-center border w-[200px] h-[200px] border-gray-100 shadow-lg shadow-slate-50">
                     <img className='w-14' src={mail} alt="" />
-                    <p className="text-lg ml-6 mt-4 font-extrabold">mail us&#64;travelplus&#64;mail.com</p>
+                    <p className="text-lg ml-6 mt-4 font-extrabold">mail us&#64; travelplus&#64; gmail.com</p>
                 </div>
             </div>
         </div>
