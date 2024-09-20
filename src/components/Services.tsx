@@ -21,7 +21,7 @@ export default function Services() {
             <div className="">
                 {/* <div className="bg-green-500 h-4 w-20 p-10 rounded-full">
                 </div> */}
-                <img className='w-20 ' src={map} alt=""/>
+                <img className='w-28 ' src={map} alt=""/>
                 <div className="capitalize mt-4">
                     <h1 className="font-bold text-xl">Inter-State Services</h1>
                     <p className="leading-2"> We pick and <br /> deliver packages<br /> to your door steps</p>
@@ -31,7 +31,7 @@ export default function Services() {
             <div className="">
                 {/* <div className="bg-green-500 h-4 w-20 p-10 rounded-full">
                 </div> */}
-                <img className='w-20 ' src={packages} alt=""/>
+                <img className='w-28 ' src={packages} alt=""/>
                 <div className="capitalize mt-4">
                     <h1 className="font-bold text-xl">Package Delivery</h1>
                     <p className="leading-7"> We pick and <br />deliver packages<br /> to your door steps</p>
@@ -41,7 +41,7 @@ export default function Services() {
             <div className="">
                 {/* <div className="bg-green-500 h-4 w-20 p-10 rounded-full">
                 </div> */}
-                <img className='w-20 ' src={man} alt=""/>
+                <img className='w-28 ' src={man} alt=""/>
                 <div className="capitalize mt-4">
                     <h1 className="font-bold text-xl">Address Pick Up</h1>
                     <p className="leading-7"> We always pick up <br />our clients on <br />time, 24/7<br /> Availability.</p>
@@ -60,7 +60,7 @@ export default function Services() {
             <div className="flex-1">
                 <img className='w-max object-cover' src={women} alt="" />
             </div>
-            <span className="h-[75vh] mt-4 border-r-4"></span>
+            <span className="h-[80vh] mt-4 border-r-4"></span>
             <div className="flex-1 text-justify -mt-12">
                 <div className='flex items-center ml-8 mt-8'>
                     <img className='w-28 bg-green-500 rounded-full p-5 mr-8' src={download} alt=""/>
