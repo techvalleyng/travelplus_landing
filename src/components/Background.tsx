@@ -5,16 +5,16 @@ import './css/background.css'
 export default function Background() {
   return (
     <div>
-        <div className="container-fluid relative -z-10 overflow-hidden h-[700px] flex items-center  bg-image bg-cover bg-no-repeat bg-fixed">
+        <div className="container-fluid relative -z-10 overflow-hidden h-[700px] flex items-center  bg-image bg-cover font-inter bg-no-repeat bg-fixed">
           <div className="mt-30 w-[70%] ml-20">
-            <p className="text-[93px] font-bold text-white">Download The App </p>
-            <p className="text-[60px] font-bold text-[greenYellow]">And Make Your Order Now</p>
-            <div className='flex space-x-4  translate-y-14'>
-              <button className='flex  bg-white  rounded-full p-4 text-lg justify-between items-center  hover:bg-green-500 hover:text-white' type="button">
+            <p className="text-[85px] font-bold text-white">Download The App </p>
+            <p className="text-[50px] font-bold text-[greenYellow]">And Make Your Order Now</p>
+            <div className='flex space-x-4 font-inter  translate-y-14'>
+              <button className='flex  bg-white  rounded-full p-4 text-lg justify-between items-center' type="button">
                 <img className='w-6 mr-2 text-lg' src={Playstore} alt=""/>
                 Google Play
               </button>
-              <button type="button" className='font-bold  bg-white rounded-full p-4 text-lg hover:bg-green-500 hover:text-white'>
+              <button type="button" className='font-bold  bg-white rounded-full p-4 text-lg hover:bg-green-500'>
                 <AppleIcon className='mr-1 text-lg'/>
                 App Store
               </button>

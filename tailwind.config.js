@@ -2,7 +2,12 @@
 export default {
   content: ['./src/**/*.{html,js,jsx,ts,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        pacifico:['Pacifico', 'cursive'],
+        inter:['inter', 'sans-serif']
+      }                                                                                        
+    },
   },
   plugins: [],
 }
