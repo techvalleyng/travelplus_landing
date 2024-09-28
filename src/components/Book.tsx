@@ -5,7 +5,7 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime'
 
 export default function Book() {
   return (
-    <div>
+    <div id='Book'>
       <div className="container-fluid font-inter  mt-8 h-[400px]  bg-cover bg-no-repeat bg-img">
       <div className="bg-green-700 h-[400px] bg-opacity-70">
         <div className="text-center font-interr font-extrabold  text-white capitalize">

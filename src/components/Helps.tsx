@@ -3,7 +3,7 @@ import call from '../assets/call.svg'
 import mail from '../assets/mail.svg'
 export default function Helps() {
   return (
-    <div>
+    <div id='Contact-us'>
         <div className='Container-fluid mt-6'>
             <div className="text-center font-inter capitalize">
                 <h3 className="text-3xl font-bold font-inter mb-4 text-green-600">How can we help you</h3>

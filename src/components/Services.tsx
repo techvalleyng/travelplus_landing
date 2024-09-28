@@ -8,7 +8,7 @@ import sharp from '../assets/sharp.svg'
 
 export default function Services() {
   return (
-    <div>
+    <div id='services'>
       <div className="container-fluid  py-10 px-4">
         <div className="text-center">
             <h3 className="text-3xl font-bold mb-4 font-inter text-green-600">What We Offer</h3>
