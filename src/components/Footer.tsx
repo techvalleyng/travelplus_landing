@@ -1,7 +1,7 @@
 import travlog from '../assets/travlogo.png'
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import XIcon from '@mui/icons-material/X';
+import facebook from '../assets/facebook.svg'
+import instagram from '../assets/instagram.svg'
+import twitter from '../assets/twitter.svg'
 export default function Footer() {
   return (
     <div>
@@ -21,10 +21,11 @@ export default function Footer() {
           <h1 className='border-b-2 border-solid border-green-500 w-24'>Contact Us</h1>
             <span>Phone:08025734353, 08036400647</span>
             <span>Email:travelplus@gmail.com</span>
-            <div className='space-x-2'>
-            <a href="#" aria-label='link'><InstagramIcon/></a>
-            <a href="#" aria-label='link'><XIcon/></a>
-            <a href="#" aria-label='link'><FacebookIcon/></a>
+
+            <div className='space-x-4 flex'>
+              <a href="#" aria-label='link'><img src={instagram} className='w-8' alt=""/></a>
+              <a href="#" aria-label='link'><img src={twitter}   className='w-8' alt=""/></a>
+              <a href="#" aria-label='link'><img src={facebook}  className='w-8' alt=""/></a>
             </div>
         </div>
       </div>
