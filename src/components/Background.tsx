@@ -6,23 +6,23 @@ import './css/background.css';
 export default function Background() {
   return (
     <div>
-      <div className="container-fluid relative z-10 overflow-hidden h-[700px] flex flex-col md:flex-row items-center bg-image bg-cover font-inter bg-no-repeat bg-fixed">
-        <div className="mt-30 w-full md:w-[70%] ml-0 md:ml-20 px-4">
-          <p className="text-[40px] md:text-[65px] lg:text-[85px] font-bold text-white">Download The App</p>
-          <p className="text-[25px] md:text-[40px] lg:text-[50px] font-bold text-[greenYellow]">And Make Your Order Now</p>
-          <div className='flex flex-col md:flex-row space-x-0 md:space-x-4 font-inter translate-y-4 md:translate-y-14'>
-            <button className='flex bg-white rounded-full p-4 text-lg justify-between items-center transition duration-150 ease-linear hover:bg-green-500 hover:text-white' type="button">
-              <img className='w-6 mr-2 text-lg' src={Playstore} alt="" />
+      <div className="container-fluid  relative z-10 overflow-hidden h-[700px] flex flex-col md:flex-row items-center bg-image bg-cover font-inter bg-no-repeat bg-fixed">
+        <div className="mt-52 md:-mt-10 w-[70%] ml-0 md:ml-20 px-4">
+          <p className="text-2xl mt-8 -ml-10 md:ml-0 md:text-[65px]  lg:text-[85px] font-bold text-white">Download The App</p>
+          <p className="text-xl -ml-10 md:ml-0 md:text-[40px] md:mt-10 lg:text-[50px] font-bold text-[greenYellow] md:leading-10">And Make Your Order Now</p>
+          <div className='flex items-center w-96 space-x-4 font-inter translate-y-52 md:translate-y-28'>
+            <button className='flex -ml-10 md:ml-0 bg-white rounded-full p-4 text-md justify-between items-center transition duration-150 ease-linear hover:bg-green-500 hover:text-white' type="button">
+              <img className='w-6 mr-2' src={Playstore} alt="" />
               Google Play
             </button>
-            <button type="button" className='font-inter transition duration-150 ease-linear bg-white rounded-full p-4 text-lg hover:bg-green-500 hover:text-white mt-4 md:mt-0'>
+            <button type="button" className='font-inter -ml-10 md:ml-0 transition duration-150 ease-linear bg-white rounded-full p-4 text-lg hover:bg-green-500 hover:text-white  md:mt-0'>
               <AppleIcon className='mr-1 text-lg' />
               App Store
             </button>
           </div>
         </div>
         <div className='flex-1 w-full md:w-[60%]'>
-          <img className='w-[60%] md:w-[40%] lg:w-[35%] mx-auto -z-10 object-contain -rotate-[20deg] absolute -right-14 bottom-0 top-28' src={hand} alt="images" />
+          <img className='w-[60%] md:w-[40%] lg:w-[35%] mx-auto -z-10 object-contain -rotate-[20deg] absolute -right-24 top-40 md:-right-14 bottom-0 md:top-28' src={hand} alt="images" />
         </div>
       </div>
     </div>
