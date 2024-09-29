@@ -6,7 +6,7 @@ import twitter from '../assets/twitter.svg';
 export default function Footer() {
   return (
     <div className="bg-green-600 text-white">
-      <div className="container-fluid pb-36 mt-10 flex flex-col md:flex-row justify-around items-center py-6">
+      <div className="container-fluid pb-20 mt-10 flex flex-col md:flex-row justify-around items-center py-6">
         <div className="flex items-center mb-4 md:mb-0 md:-mt-24 md:-ml-20">
           <img className="h-10" src={travlog} alt="Travel Plus Logo" />
           <span className="ml-2 text-lg font-pacifico">
