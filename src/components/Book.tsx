@@ -15,15 +15,16 @@ export default function Book() {
         <form action="">
             <div className="flex gap-8 flex-wrap justify-center font-inter items-center mt-14">
                 <div className='capitalize  relative'>
-                    <LocationOnIcon className="absolute top-5  left-2"/>
+                    <LocationOnIcon className="absolute top-4  left-2"/>
                     <select className='py-4 pl-10 font-inter bg-white rounded  w-[200px] focus:outline-none focus:ring-2 focus:ring-green-500' name="destination" aria-label='Start Destination' id="">
                         <option value="" disabled selected>Start Destination</option>
+                        <option value="">Kaduna</option>
                         <option value="">Abuja</option>
-                        <option value="">Abuja</option>
+                        <option value="">Kano</option>
                     </select>
                 </div>
                 <div className='capitalize relative font-inter'>
-                    <LocationOnIcon className="absolute top-5  left-2"/>
+                    <LocationOnIcon className="absolute top-4  left-2"/>
                     <select className='py-4 pl-10 bg-white rounded w-[200px] focus:outline-none focus:ring-2 focus:ring-green-500' name="destination" aria-label='End Destination' id="">
                         <option value="" disabled selected>End Destination</option>
                         <option value="Kaduna">Kaduna</option>
@@ -33,12 +34,7 @@ export default function Book() {
                     </select>
                 </div>
                 <div className='relative'>
-                    <AccessTimeIcon className="absolute top-5  left-2"/>
-                    <input className='appearance-none pl-10 rounded  py-4 text-center focus:outline-none w-[200px]' type="datetime-local" aria-label='time' placeholder=''/>
-                </div>
-                <div className='relative'>
-                    <CallIcon className="absolute top-5  left-2 "/>
-                    <input className='appearance-none pl-10 rounded  py-4  focus:outline-none w-[200px]' type="number" aria-label='time' placeholder=' Phone Number'/>
+                    <input className='appearance-none pl-2 rounded  py-4 text-center focus:outline-none w-[200px]' type="datetime-local" aria-label='time' placeholder=''/>
                 </div>
             </div>
             <div className='mt-8 text-center font-inter'>

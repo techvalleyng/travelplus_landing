@@ -6,48 +6,49 @@ import car from '../assets/car.svg'
 import download from '../assets/download.svg'
 import sharp from '../assets/sharp.svg'
 
+
 export default function Services() {
   return (
     <div id='services'>
-      <div className="container-fluid  py-10 px-4">
-        <div className="text-center">
-            <h3 className="text-3xl font-bold mb-4 font-inter text-green-600">What We Offer</h3>
-            <h1 className="text-gray-500 mb-4 font-bold font-inter text-6xl">Our Futured Services</h1>
-            <p className="text-lg capitalize font-inter  mb-4">
-                We created our Taxi to help you find the most dependable and highest quality taxi Services, Anytime <br />and Anywhere. all our drivers are uniformed and fully licensed.
-            </p>
-        </div>
-        <div className="flex mx-10 items-center justify-around my-8">
-            <div className="">
-                {/* <div className="bg-green-500 h-4 w-20 p-10 rounded-full">
-                </div> */}
-                <img className='w-28 ' src={map} alt=""/>
-                <div className="capitalize font-inter mt-4">
-                    <h1 className="font-bold text-xl">Inter-State Services</h1>
-                    <p className="leading-2"> We pick and <br /> deliver packages<br /> to your door steps</p>
+      <div className="container-fluid relative py-10 px-4">
+            <div className="text-center">
+                <h3 className="text-3xl font-bold mb-4 font-inter text-green-600">What We Offer</h3>
+                <h1 className="text-gray-500 mb-4 font-bold font-inter text-6xl">Our Futured Services</h1>
+                <p className="text-lg capitalize font-inter  mb-4">
+                    We created our Taxi to help you find the most dependable and highest quality taxi Services, Anytime <br />and Anywhere. all our drivers are uniformed and fully licensed.
+                </p>
+            </div>
+            <div className="flex mx-10 items-center justify-around my-8">
+                <div className="">
+                    {/* <div className="bg-green-500 h-4 w-20 p-10 rounded-full">
+                    </div> */}
+                    <img className='w-28 ' src={map} alt=""/>
+                    <div className="capitalize font-inter mt-4">
+                        <h1 className="font-bold text-xl">Inter-State Services</h1>
+                        <p className="leading-2"> We pick and <br /> deliver packages<br /> to your door steps</p>
+                    </div>
+                </div>
+                {/* <span className="h-[40vh] border-r-2"></span> */}
+                <div className="">
+                    {/* <div className="bg-green-500 h-4 w-20 p-10 rounded-full">
+                    </div> */}
+                    <img className='w-28 ' src={packages} alt=""/>
+                    <div className="capitalize font-inter  mt-4">
+                        <h1 className="font-bold text-xl">Package Delivery</h1>
+                        <p className="leading-7"> We pick and <br />deliver packages<br /> to your door steps</p>
+                    </div>
+                </div>
+                {/* <span className="h-[40vh] border-r-2"></span> */}
+                <div className="">
+                    {/* <div className="bg-green-500 h-4 w-20 p-10 rounded-full">
+                    </div> */}
+                    <img className='w-28 ' src={man} alt=""/>
+                    <div className="capitalize font-inter mt-4">
+                        <h1 className="font-bold text-xl">Address Pick Up</h1>
+                        <p className="leading-7"> We always pick up <br />our clients on <br />time, 24/7<br /> Availability.</p>
+                    </div>
                 </div>
             </div>
-            {/* <span className="h-[40vh] border-r-2"></span> */}
-            <div className="">
-                {/* <div className="bg-green-500 h-4 w-20 p-10 rounded-full">
-                </div> */}
-                <img className='w-28 ' src={packages} alt=""/>
-                <div className="capitalize font-inter  mt-4">
-                    <h1 className="font-bold text-xl">Package Delivery</h1>
-                    <p className="leading-7"> We pick and <br />deliver packages<br /> to your door steps</p>
-                </div>
-            </div>
-            {/* <span className="h-[40vh] border-r-2"></span> */}
-            <div className="">
-                {/* <div className="bg-green-500 h-4 w-20 p-10 rounded-full">
-                </div> */}
-                <img className='w-28 ' src={man} alt=""/>
-                <div className="capitalize font-inter mt-4">
-                    <h1 className="font-bold text-xl">Address Pick Up</h1>
-                    <p className="leading-7"> We always pick up <br />our clients on <br />time, 24/7<br /> Availability.</p>
-                </div>
-            </div>
-        </div>
         </div>
         <div className="text-center capitalize font-inter">
             <h3 className="text-3xl font-bold mb-4 font-inter text-green-600">How it works</h3>
