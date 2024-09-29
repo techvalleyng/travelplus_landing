@@ -6,7 +6,7 @@ import twitter from '../assets/twitter.svg';
 export default function Footer() {
   return (
     <div className="bg-green-600 text-white">
-      <div className="container-fluid pb-auto mt-10 flex flex-col md:flex-row justify-around items-center py-6">
+      <div className="container-fluid pb-36 mt-10 flex flex-col md:flex-row justify-around items-center py-6">
         <div className="flex items-center mb-4 md:mb-0 md:-mt-24 md:-ml-20">
           <img className="h-10" src={travlog} alt="Travel Plus Logo" />
           <span className="ml-2 text-lg font-pacifico">
@@ -14,15 +14,15 @@ export default function Footer() {
           </span>
         </div>
         
-        <div className="font-inter flex flex-col leading-8 items-center mb-4 md:mb-0">
-          <h1 className="border-b-2 border-solid border-green-500 w-28 text-center">Our Services</h1>
+        <div className="font-inter  flex flex-col mt-6 md:mt-0 items-center leading-10 md:mb-0">
+          <h1 className="border-b-2 border-solid leading-6 border-green-500 w-28 text-center">Our Services</h1>
           <a href="#" className="transition duration-150 ease-linear hover:opacity-60">Delivery</a>
           <a href="#" className="transition duration-150 ease-linear hover:opacity-60">Pick Up</a>
           <a href="#" className="transition duration-150 ease-linear hover:opacity-60">Inter State</a>
         </div>
 
-        <div className="font-inter flex flex-col leading-8 items-center mb-4 md:mb-0">
-          <h1 className="border-b-2 border-solid border-green-500 w-24 text-center">Contact Us</h1>
+        <div className="font-inter flex flex-col mt-6 md:mt-0  leading-10 items-center mb-4 md:mb-0">
+          <h1 className="border-b-2 border-solid leading-6 border-green-500 w-24 text-center">Contact Us</h1>
           <span className='ml-16'>Phone: 08025734353, 08036400647</span>
           <span>Email: travelplus@gmail.com</span>
 
