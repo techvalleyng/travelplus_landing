@@ -17,7 +17,7 @@ export default function Services() {
             We created our Taxi to help you find the most dependable and highest quality taxi Services, Anytime <br />and Anywhere. All our drivers are uniformed and fully licensed.
           </p>
         </div>
-        <div className="flex flex-wrap mx-auto items-center justify-around my-8">
+        <div className="flex flex-col md:flex-row flex-wrap mx-auto items-center justify-around my-8">
           <div className="text-center m-4 flex-1 max-w-[200px] sm:max-w-[250px]">
             <img className='w-24 sm:w-28 mx-auto' src={map} alt="Inter-State Services" />
             <div className="capitalize font-inter mt-4">
