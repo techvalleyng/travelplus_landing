@@ -4,7 +4,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 export default function Book() {
   return (
     <div id='Book'>
-      <div className="container-fluid font-inter mt-8 h-[880px] md:h-[400px] md:bg-cover bg-no-repeat  bg-img">
+      <div className="container-fluid font-inter mt-8 h-[480px] md:h-[400px] md:bg-cover bg-no-repeat  bg-img">
         <div className="bg-green-700 md:h-[400px] h-[480px] bg-opacity-70 flex flex-col justify-center">
           <div className="text-center font-extrabold text-white capitalize">
             <p className='text-2xl mt-10 md:text-3xl md:-translate-y-4'>Enjoy a Comfortable Trip</p>
