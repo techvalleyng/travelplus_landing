@@ -1,59 +1,26 @@
-import { Link, Outlet } from 'react-router-dom';
-import travlog from '../assets/travlogo.png';
-import MenuIcon from '@mui/icons-material/Menu';
-import { useState } from 'react';
-
+import { NavLink } from 'react-router-dom';
+import travlogo from '../assets/travlogo(2).svg'
 export default function Header() {
-  const [toggleMenu, setToggelMenu] = useState(false);
-
-  const handleClick = () => {
-    setToggelMenu(!toggleMenu); // Toggle menu state
-  };
-
   return (
-    <div>
-      <div className="fixed z-40 font-bold top-0 left-0 right-0 h-16 text-white text-md flex p-5 bg-opacity-40 items-center justify-between bg-green-600">
-        {/* Logo */}
-        <div className="flex items-center">
-          <img className="ml-4 md:ml-20 h-10" src={travlog} alt="Travel Logo" />
-          <span className='ml-2 text-white text-lg font-pacifico'>
-            Travel<sup>&#43;</sup>
-          </span>
-        </div>
-
-        {/* Desktop Menu */}
-        <div className="hidden md:flex font-inter space-x-8 items-center">
-          <ul className="flex items-center space-x-6">
-            <li><Link to='/' className="border-b-4 border-solid border-green-500 hover:opacity-60 transition-opacity duration-300 ease-in" >Home</Link></li>
-            <li><a href="#services" className='hover:opacity-60 transition-opacity duration-300 ease-in'>Services</a></li>
-            <li><a href="#Contact-us" className='hover:opacity-60 transition-opacity duration-300 ease-in'>Contact Us</a></li>
-            <li className="bg-green-500 p-2 rounded">
-              <a href="#Book" className='hover:opacity-60 transition-opacity duration-300 ease-in'>Book Your Ride Now</a>
-            </li>
-          </ul>
-        </div>
-
-        {/* Mobile Menu Button */}
-        <div className="md:hidden">
-          <button aria-label='Toggle menu' onClick={handleClick}>
-            <MenuIcon />
-          </button>
-        </div>
-      </div>
-
-      {/* Mobile Menu */}
-      {toggleMenu && (
-        <div className="bg-green-600 bg-opacity-40 fixed z-40 font-bold top-16 left-0 right-0  text-white text-center p-4 space-y-4 font-inter md:hidden">
-          <ul className="flex flex-col items-start space-y-4">
-            <li><Link to='/' className="block border-b-4 border-solid border-green-500">Home</Link></li>
-            <li><a href="#services" className="block">Services</a></li>
-            <li><a href="#Contact-us" className="block">Contact Us</a></li>
-            <li><a href="#Book" className="block bg-green-500 p-2 rounded">Book Your Ride Now</a></li>
-          </ul>
-        </div>
-      )}
-
-      <Outlet />
+   <div 
+   className="h-20  shadow-md text-green-800 font-inter md:flex md:items-center        md:justify-around border-gray-100 border-2 border-solid">
+    <div className='flex items-center'>
+      <img 
+        src={travlogo}
+        className='w-10 mr-1' 
+        alt="Logo"
+       />
+       <span className='font-pacifico text-green-700'>Travel<sup>&#43;</sup></span>
     </div>
+    <div className='md:space-x-10 font-inter font-medium'>
+      <NavLink className='border-solid border-b-4 border-green-700' to='/'>Home</NavLink>
+      <a href="#">Our Service</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <div className='md:space-x-6'>
+      <NavLink className='bg-green-700 text-white font-inter p-2 rounded' to='/login'>Log in</NavLink>
+      <NavLink className='font-inter' to='/signup'>Sign Up</NavLink>
+    </div>
+   </div>
   );
 }

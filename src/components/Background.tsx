@@ -1,30 +1,34 @@
-import AppleIcon from '@mui/icons-material/Apple';
-import Playstore from '../assets/playstore.svg';
-import hand from '../assets/hand.png';
-import './css/background.css';
+// import AppleIcon from '@mui/icons-material/Apple';
+// import Playstore from '../assets/playstore.svg';
+// import hand from '../assets/hand.png';
+// import './css/background.css';
+import person from '../assets/person.svg'
+import arrow from '../assets/arrow.svg'
+import date from '../assets/date.svg'
 
 export default function Background() {
   return (
-    <div>
-      <div className="container-fluid  relative z-10 overflow-hidden h-[700px] flex flex-col md:flex-row items-center bg-image bg-cover font-inter bg-no-repeat bg-fixed">
-        <div className="mt-52 md:-mt-10 w-[70%] ml-0 md:ml-20 px-4">
-          <p className="text-2xl mt-8 -ml-10 md:ml-0 md:text-[65px]  lg:text-[85px] font-bold text-white">Download The App</p>
-          <p className="text-xl -ml-10 md:ml-0 md:text-[40px] md:mt-10 lg:text-[50px] font-bold text-[greenYellow] md:leading-10">And Make Your Order Now</p>
-          <div className='flex items-center w-96 space-x-4 font-inter translate-y-52 md:translate-y-28'>
-            <button className='flex -ml-10 md:ml-0 bg-white rounded-full p-4 text-md justify-between items-center transition duration-150 ease-linear hover:bg-green-500 hover:text-white' type="button">
-              <img className='w-6 mr-2' src={Playstore} alt="" />
-              Google Play
-            </button>
-            <button type="button" className='font-inter -ml-10 md:ml-0 transition duration-150 ease-linear bg-white rounded-full p-4 text-lg hover:bg-green-500 hover:text-white  md:mt-0'>
-              <AppleIcon className='mr-1 text-lg' />
-              App Store
-            </button>
-          </div>
-        </div>
-        <div className='flex-1 w-full md:w-[60%]'>
-          <img className='w-[60%] md:w-[40%] lg:w-[35%] mx-auto -z-10 object-contain -rotate-[20deg] absolute -right-24 top-40 md:-right-14 bottom-0 md:top-28' src={hand} alt="images" />
-        </div>
+    <>
+    <div className="flex justify-around space-y-10 font-inter">
+      <div className='capitalize md:mt-20 md:ml-10  text-[#282626]'>
+        <p className='md:text-2xl font-inter  font-semibold'>Are you a frequent traveler</p>
+        <p className='md:text-6xl font-inter leading-8 font-bold'>Discover affordable and <br /> comfortable travel <br /> experience.</p>
+      </div>
+      <div className=''>
+        <img className='min-w-44' src={person} alt=""  />
       </div>
     </div>
+
+    <div className="border md:mr-16 md:ml-24 mt-8 mb-20 border-gray-100 rounded-md shadow text-[#282626] flex  md:flex-row md:items-center md:justify-between md:text-xl font-inter md:p-2">
+      <span className='capitalize'>from</span>
+      <img className='min-w-8' src={arrow} alt="" />
+      <span>To</span>
+      <div className='flex md:flex-row md:space-x-2'>
+        <img className='min-w-6' src={date} alt=""/>
+        <span>Date</span>
+      </div>
+      <button className='bg-green-700 rounded text-sm text-white md:px-8 md:py-2'>Schedule Now</button>
+    </div>
+    </>
   );
 }

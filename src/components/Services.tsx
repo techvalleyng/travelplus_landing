@@ -9,41 +9,9 @@ import sharp from '../assets/sharp.svg';
 export default function Services() {
   return (
     <div id='services'>
-      <div className="container-fluid relative py-10 px-4">
-        <div className="text-center">
-          <h3 className="text-3xl font-bold mb-4 font-inter text-green-600">What We Offer</h3>
-          <h1 className="text-gray-500 mb-4 font-bold font-inter text-4xl md:text-6xl">Our Futured Services</h1>
-          <p className="text-lg capitalize font-inter mb-4">
-            We created our Taxi to help you find the most dependable and highest quality taxi Services, Anytime <br />and Anywhere. All our drivers are uniformed and fully licensed.
-          </p>
-        </div>
-        <div className="flex flex-col md:flex-row flex-wrap mx-auto items-center justify-around my-8">
-          <div className="text-center m-4 flex-1 max-w-[200px] sm:max-w-[250px]">
-            <img className='w-24 sm:w-28 mx-auto' src={map} alt="Inter-State Services" />
-            <div className="capitalize font-inter mt-4">
-              <h1 className="font-bold text-lg sm:text-xl">Inter-State Services</h1>
-              <p className="leading-5 sm:leading-6">We pick and <br /> deliver packages<br /> to your door steps</p>
-            </div>
-          </div>
-          <div className="text-center m-4 flex-1 max-w-[200px] sm:max-w-[250px]">
-            <img className='w-24 sm:w-28 mx-auto' src={packages} alt="Package Delivery" />
-            <div className="capitalize font-inter mt-4">
-              <h1 className="font-bold text-lg sm:text-xl">Package Delivery</h1>
-              <p className="leading-5 sm:leading-6">We pick and <br />deliver packages<br /> to your door steps</p>
-            </div>
-          </div>
-          <div className="text-center m-4 flex-1 max-w-[200px] sm:max-w-[250px]">
-            <img className='w-24 sm:w-28 mx-auto' src={man} alt="Address Pick Up" />
-            <div className="capitalize font-inter mt-4">
-              <h1 className="font-bold text-lg sm:text-xl">Address Pick Up</h1>
-              <p className="leading-5 sm:leading-6">We always pick up <br />our clients on <br />time, 24/7<br /> Availability.</p>
-            </div>
-          </div>
-        </div>
-      </div>
       <div className="text-center capitalize font-inter">
         <h3 className="text-3xl font-bold mb-4 font-inter text-green-600">How it works</h3>
-        <h1 className="text-gray-500 mb-4 font-bold font-inter text-4xl md:text-6xl">Our Online Services</h1>
+        <h1 className="text-gray-500 mb-4 font-bold font-inter text-4xl md:text-6xl">Our  Online Services</h1>
         <p className="text-lg font-inter mb-4">
           Enjoy a comfortable and safe trip with our services
         </p>
@@ -68,6 +36,39 @@ export default function Services() {
           </div>
         </div>
       </div>
+      <div className="container-fluid relative py-10 px-4">
+        <div className="text-center">
+          <h3 className="text-3xl font-bold mb-4 font-inter text-green-600">What We Offer</h3>
+          <h1 className="text-gray-500 mb-4 font-bold font-inter text-4xl md:text-6xl">Our Futured Services</h1>
+          <p className="text-lg capitalize font-inter mb-4">
+            We created our Taxi to help you find the most dependable and highest quality taxi Services, Anytime <br />and Anywhere. All our drivers are uniformed and fully licensed.
+          </p>
+        </div>
+        <div className="flex flex-col md:flex-row flex-wrap mx-auto items-center      justify-around my-8">
+          <div className="text-center m-4 flex-1 max-w-[200px] sm:max-w-[250px]">
+            <img className='w-24 sm:w-28 mx-auto' src={map} alt="Inter-State Services" />
+            <div className="capitalize font-inter mt-4">
+              <h1 className="font-bold text-lg sm:text-xl">Inter-State Services</h1>
+              <p className="leading-5 sm:leading-6">We pick and <br /> deliver packages<br /> to your door steps</p>
+            </div>
+          </div>
+          <div className="text-center m-4 flex-1 max-w-[200px] sm:max-w-[250px]">
+            <img className='w-24 sm:w-28 mx-auto' src={packages} alt="Package Delivery" />
+            <div className="capitalize font-inter mt-4">
+              <h1 className="font-bold text-lg sm:text-xl">Package Delivery</h1>
+              <p className="leading-5 sm:leading-6">We pick and <br />deliver packages<br /> to your door steps</p>
+            </div>
+          </div>
+          <div className="text-center m-4 flex-1 max-w-[200px] sm:max-w-[250px]">
+            <img className='w-24 sm:w-28 mx-auto' src={man} alt="Address Pick Up" />
+            <div className="capitalize font-inter mt-4">
+              <h1 className="font-bold text-lg sm:text-xl">Address Pick Up</h1>
+              <p className="leading-5 sm:leading-6">We always pick up <br />our clients on <br />time, 24/7<br /> Availability.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
     </div>
   );
 }
