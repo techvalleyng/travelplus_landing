@@ -11,7 +11,6 @@ export default function Home() {
       <Header/>
       <Background/>
       <Services/>
-      <Book/>
       <Helps/>
       <Footer/>
     </div>

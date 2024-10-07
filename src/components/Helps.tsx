@@ -5,7 +5,7 @@ import mail from '../assets/mail.svg';
 export default function Helps() {
   return (
     <div id='Contact-us'>
-      <div className='container-fluid mt-20 mb-24'>
+      <div className='container-fluid mb-24'>
         <div className="text-center font-inter capitalize">
           <h3 className="text-3xl font-bold mb-4 text-green-600">How can we help you</h3>
           <h1 className="text-gray-500 mb-4 font-bold text-4xl md:text-6xl">Have a question&#63;</h1>
