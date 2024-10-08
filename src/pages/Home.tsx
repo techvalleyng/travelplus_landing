@@ -1,5 +1,5 @@
 import Background from "../components/Background";
-import Book from "../components/Book";
+// import Book from "../components/Book";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Helps from "../components/Helps";
