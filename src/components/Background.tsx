@@ -55,7 +55,7 @@ export default function Background() {
             </div>
           </div>
         </div>
-        <div className='absolute max-w-20 md:max-w-48 -right-4 top-7 md:top-10 md:-right-4 md:bottom-0  -rotate-[25deg] overflow-y-hidden'>
+        <div className='absolute max-w-20  md:max-w-48 -right-4 top-7 md:top-10 md:-right-4 md:bottom-0  -rotate-[25deg] overflow-y-hidden'>
           <img src={hand} alt=""/>
         </div>
       </div>
