@@ -23,7 +23,7 @@ export default function Header() {
       <div 
         className={`${toggle ? 'h-[350px]' :'h-0'} sticky right-0 left-0 top-0 z-50 space-y-6 space-x-8 md:space-x-0 md:space-y-0   flex-col md:h-20 shadow-md text-green-800 font-inter flex md:flex-row md:items-center  md:justify-around border-gray-100 border-2 border-solid text-sm`}>
           
-        <div className='flex ml-8 mt-8 md:m-0 items-center'>
+        <div className='flex ml-8 mt-5 md:m-0 items-center'>
           <img                                                                               
             src={travlogo}
             className='w-10 mr-1' 
