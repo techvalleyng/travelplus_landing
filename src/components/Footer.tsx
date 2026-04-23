@@ -2,6 +2,7 @@ import travlog from '../assets/travlogo.png';
 import facebook from '../assets/facebook.svg';
 import instagram from '../assets/instagram.svg';
 import twitter from '../assets/twitter.svg';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -37,6 +38,11 @@ export default function Footer() {
               <img src={facebook} className="w-8" alt="Facebook" />
             </a>
           </div>
+        </div>
+        <div className="font-inter flex flex-col mt-6 md:mt-0 leading-10 items-center mb-4 md:mb-0">
+          <h1 className="border-b-2 border-solid leading-6 border-green-500 w-24 text-center">Legal</h1>
+          <Link to="/privacy-policy" className="transition duration-150 ease-linear hover:opacity-60">Privacy Policy</Link>
+          <Link to="/terms-of-service" className="transition duration-150 ease-linear hover:opacity-60">Terms of Service</Link>
         </div>
       </div>
     </div>
