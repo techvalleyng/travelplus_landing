@@ -1,199 +1,123 @@
 import React from 'react';
 
 const TermsOfService: React.FC = () => {
+  const sections = [
+    { id: 'acceptance', title: '1. Acceptance of Terms' },
+    { id: 'service-description', title: '2. Service Description' },
+    { id: 'user-accounts', title: '3. User Accounts and Responsibilities' },
+    { id: 'driver-terms', title: '4. Driver-Specific Terms' },
+    { id: 'passenger-terms', title: '5. Passenger-Specific Terms' },
+    { id: 'bookings-payments', title: '6. Bookings, Payments, and Cancellations' },
+    { id: 'prohibited-conduct', title: '7. Prohibited Conduct' },
+    { id: 'intellectual-property', title: '8. Intellectual Property' },
+    { id: 'disclaimers', title: '9. Disclaimers and Limitation of Liability' },
+    { id: 'indemnification', title: '10. Indemnification' },
+    { id: 'termination', title: '11. Termination' },
+    { id: 'governing-law', title: '12. Governing Law and Dispute Resolution' },
+    { id: 'changes-terms', title: '13. Changes to Terms' },
+    { id: 'contact-us', title: '14. Contact Us' },
+  ];
+
   return (
-    <div className="container mx-auto px-4 py-8 font-inter">
-      <h1 className="text-3xl font-bold mb-4">TravelPlus Terms of Use</h1>
-      <p className="mb-6 text-gray-600">Last updated: 21st April 2026</p>
+    <div className="bg-gray-50 font-inter py-16">
+      <div className="container mx-auto px-4">
+        <div className="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-lg">
+          <h1 className="text-4xl font-bold text-gray-800 mb-4">TravelPlus Terms of Service</h1>
+          <p className="text-gray-500 mb-8">Last updated: 21st April 2026</p>
 
-      <p className="mb-4">
-        These Terms of Use (“Terms”) govern your access to and use of the TravelPlus platform, including:
-      </p>
-      <ul className="list-disc list-inside mb-4">
-        <li>TravelPlus Passenger mobile application</li>
-        <li>TravelPlus Driver mobile application</li>
-        <li>Any related services, website, or features (collectively, the “Service”)</li>
-      </ul>
-      <p className="mb-6">
-        By accessing or using TravelPlus, you agree to be bound by these Terms. If you do not agree, you must not use the Service.
-      </p>
+          <div className="mb-12">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Table of Contents</h2>
+            <ul className="space-y-2">
+              {sections.map(section => (
+                <li key={section.id}>
+                  <a href={`#${section.id}`} className="text-green-600 hover:underline">{section.title}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-      <h2 className="text-2xl font-bold mb-4">1. Eligibility</h2>
-      <p className="mb-4">To use TravelPlus, you must:</p>
-      <ul className="list-disc list-inside mb-6">
-        <li>Be at least 18 years old</li>
-        <li>Have the legal capacity to enter into a binding agreement</li>
-        <li>Provide accurate and complete information during registration</li>
-      </ul>
+          <div className="space-y-12">
+            <section id="acceptance">
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">1. Acceptance of Terms</h2>
+              <p className="text-gray-600">By using the TravelPlus mobile applications and services, you agree to be bound by these Terms of Service. If you do not agree, you may not use the Service.</p>
+            </section>
 
-      <h2 className="text-2xl font-bold mb-4">2. Description of the Service</h2>
-      <p className="mb-4">TravelPlus is a platform that connects:</p>
-      <ul className="list-disc list-inside mb-4">
-        <li>Passengers with drivers for interstate travel, pickups, and deliveries</li>
-        <li>Drivers with passengers seeking transport or delivery services</li>
-      </ul>
-      <p className="mb-6">
-        TravelPlus does not own, operate, or control vehicles and is not a transportation provider. Drivers are independent users of the platform.
-      </p>
+            <section id="service-description">
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">2. Service Description</h2>
+              <p className="text-gray-600">TravelPlus provides a platform to connect passengers with drivers for inter-state travel, package deliveries, and private hires. We are a technology provider and do not operate as a transportation carrier.</p>
+            </section>
 
-      <h2 className="text-2xl font-bold mb-4">3. User Accounts</h2>
-      <p className="mb-4">You must create an account to use most features. You agree to:</p>
-      <ul className="list-disc list-inside mb-4">
-        <li>Provide accurate and up-to-date information</li>
-        <li>Keep your login credentials secure</li>
-        <li>Be responsible for all activity under your account</li>
-      </ul>
-      <p className="mb-6">
-        We may suspend or terminate accounts that contain false information, violate these Terms, or are involved in suspicious or fraudulent activity.
-      </p>
+            <section id="user-accounts">
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">3. User Accounts and Responsibilities</h2>
+              <p className="mb-4 text-gray-600">You must be at least 18 years old to create an account. You are responsible for maintaining the confidentiality of your account and for all activities that occur under it.</p>
+              <p className="text-gray-600">You agree to provide accurate, current, and complete information during the registration process and to update such information to keep it accurate, current, and complete.</p>
+            </section>
 
-      <h2 className="text-2xl font-bold mb-4">4. Driver-Specific Terms</h2>
-      <p className="mb-4">If you use TravelPlus Driver, you agree to:</p>
-      <ul className="list-disc list-inside mb-4">
-        <li>Provide valid identification (e.g., NIN where required)</li>
-        <li>Provide accurate vehicle and license information</li>
-        <li>Maintain all required permits and licenses</li>
-        <li>Ensure your vehicle is roadworthy and safe</li>
-      </ul>
-      <p className="mb-4">You are responsible for:</p>
-      <ul className="list-disc list-inside mb-6">
-        <li>The trips you offer</li>
-        <li>Passenger safety during trips</li>
-        <li>Compliance with all applicable transport and traffic laws</li>
-      </ul>
+            <section id="driver-terms">
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">4. Driver-Specific Terms</h2>
+              <p className="mb-4 text-gray-600">Drivers must undergo a verification process, including providing a valid driver's license, vehicle information, and other required documents. Drivers are independent contractors and not employees of TravelPlus.</p>
+              <p className="text-gray-600">Drivers are solely responsible for their compliance with all applicable laws, regulations, and safety standards.</p>
+            </section>
 
-      <h2 className="text-2xl font-bold mb-4">5. Passenger-Specific Terms</h2>
-      <p className="mb-4">If you use TravelPlus Passenger, you agree to:</p>
-      <ul className="list-disc list-inside mb-4">
-        <li>Provide accurate booking information</li>
-        <li>Arrive on time for scheduled trips</li>
-        <li>Treat drivers and other passengers respectfully</li>
-      </ul>
-      <p className="mb-4">You may choose to provide an emergency contact. If you do:</p>
-      <ul className="list-disc list-inside mb-6">
-        <li>You confirm that you have obtained their consent to share their information</li>
-        <li>You agree that TravelPlus may contact them in case of emergencies or safety-related incidents</li>
-      </ul>
+            <section id="passenger-terms">
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">5. Passenger-Specific Terms</h2>
+              <p className="text-gray-600">Passengers agree to treat drivers with respect and to adhere to the booking details. Any damage to a driver's vehicle caused by a passenger may result in additional charges.</p>
+            </section>
 
-      <h2 className="text-2xl font-bold mb-4">6. Bookings, Payments, and Payouts</h2>
-      <h3 className="text-xl font-bold mb-2">Bookings (Passengers)</h3>
-      <ul className="list-disc list-inside mb-4">
-        <li>Bookings are subject to availability</li>
-        <li>Prices are displayed before confirmation</li>
-        <li>Once booked, you may be subject to cancellation policies</li>
-      </ul>
-      <h3 className="text-xl font-bold mb-2">Payments</h3>
-      <ul className="list-disc list-inside mb-4">
-        <li>Payments are processed via third-party providers</li>
-        <li>TravelPlus does not store full payment details</li>
-      </ul>
-      <h3 className="text-xl font-bold mb-2">Driver Payouts</h3>
-      <ul className="list-disc list-inside mb-6">
-        <li>Drivers receive an advance (part) payment at the start of a trip</li>
-        <li>The remaining balance is paid upon completion of the trip</li>
-        <li>Payouts are processed to the bank details provided by the driver</li>
-        <li>Payout timing may be affected by banking systems, verification checks, or operational reviews</li>
-        <li>TravelPlus reserves the right to withhold, delay, or adjust payouts where there are disputes, suspected fraud, policy violations, or incomplete trips</li>
-      </ul>
+            <section id="bookings-payments">
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">6. Bookings, Payments, and Cancellations</h2>
+              <p className="mb-4 text-gray-600">All bookings must be made through the TravelPlus platform. Payments are processed through a third-party payment provider. Cancellation policies will be clearly communicated at the time of booking.</p>
+              <p className="text-gray-600">TravelPlus may charge a service fee for bookings made through the platform.</p>
+            </section>
 
-      <h2 className="text-2xl font-bold mb-4">7. Cancellations and Refunds</h2>
-      <ul className="list-disc list-inside mb-6">
-        <li>Cancellation and refund policies may vary depending on the trip or driver</li>
-        <li>TravelPlus may assist in resolving disputes but does not guarantee refunds</li>
-        <li>Abuse of cancellation policies may result in account restrictions</li>
-      </ul>
+            <section id="prohibited-conduct">
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">7. Prohibited Conduct</h2>
+              <p className="text-gray-600">You agree not to use the Service for any unlawful purpose or in any way that could harm the Service, other users, or third parties. This includes, but is not limited to, harassment, fraud, and the transportation of illegal items.</p>
+            </section>
 
-      <h2 className="text-2xl font-bold mb-4">8. User Conduct</h2>
-      <p className="mb-4">You agree not to:</p>
-      <ul className="list-disc list-inside mb-6">
-        <li>Use the platform for unlawful purposes</li>
-        <li>Provide false or misleading information</li>
-        <li>Harass, abuse, or harm other users</li>
-        <li>Attempt to bypass the platform for off-platform transactions</li>
-        <li>Interfere with the operation or security of the Service</li>
-      </ul>
+            <section id="intellectual-property">
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">8. Intellectual Property</h2>
+              <p className="text-gray-600">All content and materials on the TravelPlus platform, including logos, trademarks, and software, are the property of TravelPlus or its licensors and are protected by intellectual property laws.</p>
+            </section>
 
-      <h2 className="text-2xl font-bold mb-4">9. Safety and Responsibility</h2>
-      <p className="mb-4">TravelPlus aims to improve safety through:</p>
-      <ul className="list-disc list-inside mb-4">
-        <li>Driver verification</li>
-        <li>Identity checks (e.g., NIN)</li>
-        <li>Trip tracking and records</li>
-        <li>Optional emergency contact information</li>
-      </ul>
-      <p className="mb-4">However:</p>
-      <ul className="list-disc list-inside mb-6">
-        <li>We do not guarantee the conduct of users</li>
-        <li>You use the Service at your own risk</li>
-        <li>In case of emergencies, contact appropriate local authorities.</li>
-      </ul>
+            <section id="disclaimers">
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">9. Disclaimers and Limitation of Liability</h2>
+              <p className="mb-4 text-gray-600">The Service is provided "as is" and "as available" without any warranties. TravelPlus does not guarantee the quality, safety, or reliability of the transportation services provided by drivers.</p>
+              <p className="text-gray-600">To the fullest extent permitted by law, TravelPlus shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses, resulting from your use of the Service.</p>
+            </section>
 
-      <h2 className="text-2xl font-bold mb-4">10. Ratings and Feedback</h2>
-      <p className="mb-4">Users may leave ratings and reviews. You agree:</p>
-      <ul className="list-disc list-inside mb-6">
-        <li>Feedback must be honest and not abusive</li>
-        <li>TravelPlus may remove inappropriate content</li>
-      </ul>
+            <section id="indemnification">
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">10. Indemnification</h2>
+              <p className="text-gray-600">You agree to indemnify and hold harmless TravelPlus and its officers, directors, employees, and agents from and against any claims, disputes, demands, liabilities, damages, losses, and costs and expenses, including, without limitation, reasonable legal and accounting fees arising out of or in any way connected with your access to or use of the Service or your violation of these Terms.</p>
+            </section>
 
-      <h2 className="text-2xl font-bold mb-4">11. Intellectual Property</h2>
-      <p className="mb-4">All rights in the Service, including software, design, and branding, are owned by TravelPlus or its licensors. You may not:</p>
-      <ul className="list-disc list-inside mb-6">
-        <li>Copy, modify, or distribute our content</li>
-        <li>Reverse engineer or exploit the platform</li>
-      </ul>
+            <section id="termination">
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">11. Termination</h2>
+              <p className="text-gray-600">We may terminate or suspend your account and access to the Service at our sole discretion, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.</p>
+            </section>
 
-      <h2 className="text-2xl font-bold mb-4">12. Privacy</h2>
-      <p className="mb-6">
-        Your use of the Service is also governed by our Privacy Policy: <a href="https://travelplus.ng/privacy-policy" className="text-blue-600 hover:underline">https://travelplus.ng/privacy-policy</a>
-      </p>
+            <section id="governing-law">
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">12. Governing Law and Dispute Resolution</h2>
+              <p className="text-gray-600">These Terms shall be governed by and construed in accordance with the laws of Nigeria, without regard to its conflict of law provisions. Any dispute arising from these Terms shall be resolved through binding arbitration in Kaduna, Nigeria.</p>
+            </section>
 
-      <h2 className="text-2xl font-bold mb-4">13. Service Availability</h2>
-      <p className="mb-4">We do not guarantee:</p>
-      <ul className="list-disc list-inside mb-4">
-        <li>Continuous or uninterrupted access</li>
-        <li>That the Service will be error-free</li>
-      </ul>
-      <p className="mb-6">We may modify or discontinue features or perform maintenance without notice.</p>
+            <section id="changes-terms">
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">13. Changes to Terms</h2>
+              <p className="text-gray-600">We reserve the right, at our sole discretion, to modify or replace these Terms at any time. We will provide notice of any changes by posting the new Terms of Service on this page.</p>
+            </section>
 
-      <h2 className="text-2xl font-bold mb-4">14. Limitation of Liability</h2>
-      <p className="mb-4">To the fullest extent permitted by law, TravelPlus is not liable for:</p>
-      <ul className="list-disc list-inside mb-4">
-        <li>Any indirect, incidental, or consequential damages</li>
-        <li>Losses arising from trips, delays, cancellations, or user conduct</li>
-        <li>Damage, loss, or theft of personal items</li>
-      </ul>
-      <p className="mb-6">Our role is limited to providing the platform.</p>
-
-      <h2 className="text-2xl font-bold mb-4">15. Indemnification</h2>
-      <p className="mb-6">
-        You agree to indemnify and hold TravelPlus harmless from any claims, damages, or liabilities arising from your use of the Service, your violation of these Terms, or your interaction with other users.
-      </p>
-
-      <h2 className="text-2xl font-bold mb-4">16. Termination</h2>
-      <p className="mb-6">
-        We may suspend or terminate your access if you violate these Terms, if required by law, or if your use poses a risk to the platform or other users. You may stop using the Service at any time.
-      </p>
-
-      <h2 className="text-2xl font-bold mb-4">17. Governing Law</h2>
-      <p className="mb-6">
-        These Terms are governed by the laws of the Federal Republic of Nigeria. Any disputes shall be resolved in the appropriate courts within Nigeria.
-      </p>
-
-      <h2 className="text-2xl font-bold mb-4">18. Changes to These Terms</h2>
-      <p className="mb-6">
-        We may update these Terms from time to time. When we do, we will update the “Last updated” date. Continued use means you accept the changes.
-      </p>
-
-      <h2 className="text-2xl font-bold mb-4">19. Contact Us</h2>
-      <p className="mb-4">
-        If you have questions about these Terms, please contact us.
-      </p>
-      <ul className="list-disc list-inside mb-4">
-        <li>Email: travelplus@gmail.com</li>
-        <li>Phone: 08025734353, 08036400647</li>
-        <li>Company / Owner: TravelPlus</li>
-        <li>Address: No28, Ali Akilu Road, Opp Kaduna Investment House</li>
-      </ul>
+            <section id="contact-us">
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">14. Contact Us</h2>
+              <p className="text-gray-600 mb-4">If you have any questions about these Terms, please contact us:</p>
+              <ul className="list-disc list-inside text-gray-600">
+                <li>Email: travelplus@gmail.com</li>
+                <li>Phone: 08025734353, 08036400647</li>
+                <li>Address: No28, Ali Akilu Road, Opp Kaduna Investment House</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

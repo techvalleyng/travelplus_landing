@@ -4,41 +4,50 @@ import mail from '../assets/mail.svg';
 import { motion } from 'framer-motion';
 
 export default function Helps() {
+  const contacts = [
+    {
+      icon: maps,
+      title: 'Our Office',
+      details: ['No28, Ali Akilu Road, Opp', 'Kaduna Investment House'],
+      alt: 'Location'
+    },
+    {
+      icon: call,
+      title: 'Call Us',
+      details: ['08025734353', '08036400647'],
+      alt: 'Call Us'
+    },
+    {
+      icon: mail,
+      title: 'Mail Us',
+      details: ['travelplus@gmail.com'],
+      alt: 'Mail Us'
+    }
+  ];
+
   return (
-    <div id='Contact-us'>
-      <div className='container-fluid mb-24'>
-        <div className="ml-14 md:ml-0 md:text-center font-inter capitalize">
-          <h3 className="text-xl font-bold mb-4 text-green-600">How can we help you</h3>
-          <h1 className="text-gray-500 mb-4 font-bold text-2xl md:text-4xl">Have a question&#63;</h1>
+    <div id='Contact-us' className="bg-gray-50 font-inter py-24">
+      <div className='container mx-auto px-4'>
+        <div className="text-center mb-12">
+          <h3 className="text-xl font-bold text-green-600 mb-2">How can we help you</h3>
+          <h1 className="text-gray-800 font-bold text-4xl">Have a Question?</h1>
         </div>
-        <div className="flex ml-14 md:ml-0 flex-wrap mt-10 gap-6 items-center md:justify-center">
-          <motion.div 
-            className="flex flex-col items-center border w-full max-w-xs h-[180px] border-gray-100 shadow-lg rounded-lg font-inter hover:-translate-y-2"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            <img className='w-14' src={maps} alt="Location" />
-            <p className="text-md ml-6 mt-4 font-bold text-gray-500 text-center">No28, Ali Akilu Road, Opp <br /> Kaduna <br /> Investment <br /> House</p>
-          </motion.div>
-          <motion.div 
-            className="flex flex-col items-center border w-full max-w-xs h-[180px] border-gray-100 shadow-lg rounded-lg font-inter hover:-translate-y-2"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-          >
-            <img className='w-14' src={call} alt="Call Us" />
-            <p className="text-md ml-6 mt-4 font-bold text-gray-500 text-center">Call Us<br /> 08025734353 <br /> 08036400647</p>
-          </motion.div>
-          <motion.div 
-            className="flex flex-col items-center border w-full max-w-xs h-[180px] border-gray-100 shadow-lg rounded-lg font-inter hover:-translate-y-2"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-          >
-            <img className='w-14' src={mail} alt="Mail Us" />
-            <p className="text-md ml-6 mt-4 font-bold text-gray-500 text-center">Mail Us&#64; <br /> travelplus&#64; gmail.com</p>
-          </motion.div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {contacts.map((contact, index) => (
+              <motion.div 
+                key={index}
+                className="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.2 }}
+              >
+                <img className='w-14 h-14 mb-3' src={contact.icon} alt={contact.alt} />
+                <h2 className="text-xl font-bold text-gray-800 mb-1">{contact.title}</h2>
+                {contact.details.map((line, i) => (
+                  <p key={i} className="text-base text-gray-500">{line}</p>
+                ))}
+              </motion.div>
+            ))}
         </div>
       </div>
     </div>

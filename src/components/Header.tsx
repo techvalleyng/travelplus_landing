@@ -13,7 +13,7 @@ export default function Header() {
   return (
     <>
       <div className="sticky top-0 z-50 shadow-md bg-white text-green-800 font-inter">
-        <div className="container mx-auto flex items-center justify-between h-20 px-4">
+        <div className="container mx-auto flex items-center justify-between h-20 px-16">
           <div className='flex items-center'>
             <img src={travlogo} className='w-10 mr-1' alt="Logo" />
             <span className='font-pacifico text-green-700 text-lg'>Travel<sup>&#43;</sup></span>
